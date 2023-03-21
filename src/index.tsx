@@ -4,7 +4,7 @@ const LINKING_ERROR =
   `The package 'rnacp' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
-  '- You are not using Expo Go\n';
+  '- You are not using Expo Go\n'
 
 const RNAcp = NativeModules.RNAcp
   ? NativeModules.RNAcp
@@ -18,5 +18,5 @@ const RNAcp = NativeModules.RNAcp
     );
 
 export function multiply(a: number, b: number): Promise<number> {
-  return RNAcp.multiply(a, b);
+  return RNAcp.multiply(a, b)
 }
